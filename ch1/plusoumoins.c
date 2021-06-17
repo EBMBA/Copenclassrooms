@@ -12,8 +12,8 @@ int generateNumber(int min, int max){
     return nombreMystere;
 }
 
-void singlePlayer(){
-    const int min =1, max = 100;
+void singlePlayer(int max){
+    const int min =1;
     int nombreMystere = generateNumber(min,max);
     int nombreUser, coups = 0;
 
@@ -86,8 +86,8 @@ void singlePlayer(){
     } while (continuePartie);
 }
 
-void multiplayer(){
-    const int min =1, max = 100;
+void multiplayer(int max){
+    const int min =1;
     int nombreMystere = -1;
     int nombreUser, coups = 0;
 
@@ -97,7 +97,7 @@ void multiplayer(){
 
     while ((nombreMystere < min ) || (nombreMystere > max))
     {
-        printf("Donnez un nombre à deviner :\n");
+        printf("Donnez un nombre à deviner entre %d et %d:\n", min, max);
         scanf("%d", &nombreMystere);
     }
 
@@ -153,7 +153,7 @@ void multiplayer(){
 
             while ((nombreMystere < min ) || (nombreMystere > max))
             {
-                printf("Donnez un nombre à deviner :\n");
+                printf("Donnez un nombre à deviner entre %d et %d :\n", min, max);
                 scanf("%d", &nombreMystere);
             }
 
@@ -174,6 +174,36 @@ void multiplayer(){
 }
 
 int main(int argc, char *argv[]) {
+    int choixNiveauUser=-1;
+    int max;
+
+    while ((choixNiveauUser != 1) && (choixNiveauUser !=2) && (choixNiveauUser !=3))
+    {
+        printf("=== Menu choix du niveau ===\n");
+        printf("1. Niveau 1\n2. Niveau 2\n3. Niveau 3\n");//
+        printf("Votre choix ?\n");
+        scanf("%d", &choixNiveauUser);
+    }
+    
+    
+
+    switch (choixNiveauUser)
+    {
+    case 1:
+        max = 100;
+        break;
+
+    case 2:
+        max = 1000;
+        break;
+
+    case 3:
+        max = 10000;
+        break;
+    
+    default:
+        break;
+    }
 
     int choixUser=-1;
 
@@ -190,11 +220,11 @@ int main(int argc, char *argv[]) {
     switch (choixUser)
     {
     case 1:
-        singlePlayer();
+        singlePlayer(max);
         break;
 
     case 2:
-        multiplayer();
+        multiplayer(max);
         break;
 
     default:
