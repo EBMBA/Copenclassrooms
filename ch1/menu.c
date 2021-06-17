@@ -4,6 +4,7 @@ Ces lignes permettent d'ajouter des fichiers au projet,
 fichiers que l'on appelle bibliothèques.
 Grâce à ces bibliothèques, on disposera de fonctions toutes prêtes pour afficher
 par exemple un message à l'écran.
+CTRL+MAJ+B pour run
 */
 
 #include <stdio.h>
