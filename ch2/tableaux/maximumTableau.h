@@ -1,0 +1,1 @@
+void maximumTableau(int tableau[], int tailleTableau, int valeurMax);

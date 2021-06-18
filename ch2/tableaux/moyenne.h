@@ -1,0 +1,1 @@
+double moyenne(int tableau[], int tailleTableau);

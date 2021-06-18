@@ -1,0 +1,1 @@
+void copie(int tableauOriginal[], int tableauCopie[], int tailleTableau);
