@@ -1,0 +1,1 @@
+void affiche(int *tableau, int tailleTableau);
