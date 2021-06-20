@@ -3,15 +3,15 @@
 Mooc pour apprendre le langage **C** du site **OpenClassrooms** 
 
 Suivi :
-- [x] Outils
-- [x] Conditions
-- [x] Boucles
-- [x] Fonctions
-- [x] Programmation modulaire
-- [x] Pointeurs
-- [x] Tableaux
-- [x] Chaînes de caractères
-- [x] Préprocesseur
+- [x] Outils ✅
+- [x] Conditions ✅ 
+- [x] Boucles ✅
+- [x] Fonctions ✅
+- [x] Programmation modulaire ✅
+- [x] Pointeurs ✅
+- [x] Tableaux ✅
+- [x] Chaînes de caractères ✅
+- [x] Préprocesseur ✅
 - [ ] Structure
 - [ ] Lire et écrire dans des fichiers
 - [ ] L'allocation dynamique
@@ -29,7 +29,7 @@ Suivi :
 - [ ] Les listes chaînées
 - [ ] Les piles et les files
 - [ ] Les tables de hachage
-- [ ] 100 / 100
+- [ ] 100 / 100 🎆
 
 Lien : 
 https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c
