@@ -12,7 +12,7 @@ Suivi :
 - [x] Tableaux ✅
 - [x] Chaînes de caractères ✅
 - [x] Préprocesseur ✅
-- [ ] Structure
+- [ ] Structure & Enumération 
 - [ ] Lire et écrire dans des fichiers
 - [ ] L'allocation dynamique
 - [ ] TP : Réalisation d'un Pendu
