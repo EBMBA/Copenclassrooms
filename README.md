@@ -13,7 +13,7 @@ Suivi :
 - [x] Chaînes de caractères ✅
 - [x] Préprocesseur ✅
 - [x] Structure & Enumération ✅
-- [ ] Lire et écrire dans des fichiers
+- [x] Lire et écrire dans des fichiers ✅
 - [ ] L'allocation dynamique
 - [ ] TP : Réalisation d'un Pendu
 - [ ] La saisie de texte sécurisée
