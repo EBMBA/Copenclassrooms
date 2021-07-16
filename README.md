@@ -14,7 +14,7 @@ Suivi :
 - [x] Préprocesseur ✅
 - [x] Structure & Enumération ✅
 - [x] Lire et écrire dans des fichiers ✅
-- [ ] L'allocation dynamique
+- [x] L'allocation dynamique ✅
 - [ ] TP : Réalisation d'un Pendu
 - [ ] La saisie de texte sécurisée
 - [ ] Apprenez à expliquer les pointeurs
