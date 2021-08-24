@@ -1,0 +1,1 @@
+void initMotMystere(char *pointeurMotMystere[], int nombreCaractere); 
