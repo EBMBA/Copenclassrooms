@@ -1,0 +1,1 @@
+void verifierLettre(const char *mot, char *motMystere, int tailleMot, char lettre, bool *lettreisIn, int *nbrEssai);

@@ -1,0 +1,1 @@
+void initMotMystere(char *motMystere, int tailleMot);

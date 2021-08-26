@@ -1,41 +1,51 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-//#include "initMotMystere.h"
+#include <stdbool.h>
+#include "Headers/initMotMystere.h"
+#include "Headers/lireCaractere.h"
+#include "Headers/verifierLettre.h"
 
 int main(int argc, char const *argv[])
 {
-    printf("Bienvenue dans le Pendu !");
+    char mot[] = "ROOGE";
+    char lettre = 0;
+    bool lettreisIn = false;
+    char motMystere[100], *checkLettre = NULL; 
+    size_t tailleMot = strlen(mot);
+    int nbrEssai = 0;
+    char symbole = 42;
 
-    char motMystere[5] = "ROUGE"; 
-    int nombreCaractere = 0, i = 0, nombreDEssais = 10;
+    // Init mot mystere
+    initMotMystere(motMystere, tailleMot);
 
-    nombreCaractere = strlen(motMystere); // pour obtenir la taille du mot mystere 
-    char *motDecouvert = NULL;
-    //motDecouvert = malloc(nombreCaractere * sizeof(char));
-    for (int i = 0; i < nombreCaractere; i++)
-    {
-        motDecouvert[i]="*";
+
+    while (nbrEssai < 10)
+    {   
+        lettreisIn = false;
+        // Demande lettre 
+        printf("Entrez une lettre :\n");
+        lettre = lireCaractere();
+
+        // Verification que la lettre n'a pas deja ete tape 
+        checkLettre = strchr(motMystere, lettre);
+        if (checkLettre == NULL)
+        {
+            verifierLettre(mot, motMystere, tailleMot, lettre, &lettreisIn, &nbrEssai);
+        }
+        
+        else{
+            printf("La lettre %c est déjà trouvée\n", lettre);
+        }
+
+        if (strcmp(motMystere, mot) == 0)
+        {
+            int nbrEssaiReussi = nbrEssai + tailleMot;  
+            printf("Bravo vous avez trouvé en %d essais\n", nbrEssaiReussi);
+            break; 
+        }
+        
     }
-
-    //char *pointeurMotDecouvert = &motDecouvert;
-
-    //initMotMystere(motDecouvert, nombreCaratere);
     
-    printf("%s\n", motDecouvert);
-    
-
-/*
-    while( i < nombreDEssais )
-    {
-        char lettrePropose = NULL;
-        printf("Il vous rester %d coups à jouer\n", nombreDEssais-i);
-        printf("Quel est le mot secret ? %c\n", motDecouvert);
-        printf("Proposez une lettre : ");
-        scanf("%c", &lettrePropose);
-    }
-    
-*/
-    //free(motDecouvert);
     return 0;
 }
