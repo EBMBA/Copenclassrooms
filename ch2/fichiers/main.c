@@ -22,7 +22,7 @@ Pour chaque mode qu'on a vu là, si vous ajoutez un"b"après le premier caractè
 FILE* fopen(const char* nomDuFichier, const char* modeOuverture);
 
 /*
-ette fonction prend un paramètre : votre pointeur sur le fichier.
+Cette fonction prend un paramètre : votre pointeur sur le fichier.
 Elle renvoie unintqui indique si elle a réussi à fermer le fichier. Cetintvaut :
 
     0: si la fermeture a marché ;

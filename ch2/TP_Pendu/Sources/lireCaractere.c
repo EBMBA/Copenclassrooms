@@ -7,7 +7,7 @@ char lireCaractere()
  
     caractere = getchar(); // On lit le premier caractère
     // changement de la lettre en sa majuscule (ASCII)
-    if (caractere > 97)
+    if (caractere >= 97)
     {
         caractere = caractere - 32;
     } 
