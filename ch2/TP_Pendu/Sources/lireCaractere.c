@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 char lireCaractere() 
 { 
@@ -7,10 +8,12 @@ char lireCaractere()
  
     caractere = getchar(); // On lit le premier caractère
     // changement de la lettre en sa majuscule (ASCII)
-    if (caractere >= 97)
+    /*if (caractere >= 97)
     {
         caractere = caractere - 32;
-    } 
+    } */
+    caractere = toupper(caractere);
+
     // On lit les autres caractères mémorisés un à un jusqu'au \n (pour les effacer) 
     while (getchar() != '\n') ;
  

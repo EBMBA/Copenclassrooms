@@ -19,6 +19,10 @@ void verifierLettre(const char *mot, char *motMystere, int tailleMot, char lettr
             *nbrEssai = *nbrEssai + 1 ;
             int temp = *nbrEssai ;
             int nbrEssaiRestant = 10 - temp ;
-            printf("Faux, la lettre %c n'est pas dans le mot.\nIl vous reste %d essai(s)\n", lettre, nbrEssaiRestant);       
+            printf("Faux, la lettre %c n'est pas dans le mot.\nIl vous reste %d essai(s)\n", lettre, nbrEssaiRestant);
+
+            if(temp == 10){
+                printf("Vous avez perdu... Le mot etait %s\n", mot);
+            }       
         }
 }

@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
+#include <ctype.h>
 #include "Headers/initMotMystere.h"
 #include "Headers/lireCaractere.h"
 #include "Headers/verifierLettre.h"
@@ -15,6 +16,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
+#include <ctype.h>
 #include "Headers/initMotMystere.h"
 #include "Headers/lireCaractere.h"
 #include "Headers/verifierLettre.h"
@@ -26,7 +28,7 @@ int main(int argc, char const *argv[])
 {
     char lettre = 0;
     bool lettreisIn = false;
-    char motMystere[100], *checkLettre = NULL; 
+    char motMystere[100] = "", *checkLettre = NULL; 
     int nbrEssai = 0;
     char symbole = 42;
     FILE* fichier=NULL;
@@ -38,6 +40,13 @@ int main(int argc, char const *argv[])
     
     // Ligne du fichier
     int ligneActuel = 0;
+
+    // Message de bienvenue
+    printf("#############################\n");
+    printf("Bienvenue dans le Pendu !\n");
+    printf("#############################\n\n");
+
+    printf("Voici les mots disponibles : \n");
     // Verification avant lecture dans le fichiers 
     if (fichier != NULL )
     {
@@ -64,16 +73,9 @@ int main(int argc, char const *argv[])
             
         } while (ligneTemp != ligneActuel);
         
-        printf("Mot choisi :%d. %s\n",ligneTemp ,motsFichier);
+        printf("Mot choisi :%d. %s \n",ligneTemp ,motsFichier);
         printf("Merci de patienter");
-        sleep(1);
-        int temps = 0;
-        do
-        {
-            printf("..");
-            sleep(1);
-            temps++;
-        } while (temps != 4);
+        sleep(3);
         
 
         for (size_t i = 0; i < 100; i++)

@@ -6,5 +6,5 @@ void initMotMystere(char *motMystere, int tailleMot){
     {   
         motMystere[i] = 42;
     }
-    printf("Voici le mot à deviner : %s\nIl y a %d caracteres\n", motMystere, tailleMot);
+    printf("Voici le mot à deviner : %s \nIl y a %d caracteres\n", motMystere, tailleMot);
 }
