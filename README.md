@@ -18,7 +18,7 @@ Suivi :
 - [x] TP : Réalisation d'un Pendu ✅
 - [x] La saisie de texte sécurisée ✅
 - [ ] Apprenez à expliquer les pointeurs
-- [ ] Création d'une fenêtre et de surfaces
+- [x] Création d'une fenêtre et de surfaces ✅
 - [ ] Afficher des images
 - [ ] La gestion des événements
 - [ ] TP : Mario Sokoban
