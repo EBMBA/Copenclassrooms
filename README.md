@@ -16,7 +16,7 @@ Suivi :
 - [x] Lire et écrire dans des fichiers ✅
 - [x] L'allocation dynamique ✅
 - [x] TP : Réalisation d'un Pendu ✅
-- [ ] La saisie de texte sécurisée
+- [x] La saisie de texte sécurisée ✅
 - [ ] Apprenez à expliquer les pointeurs
 - [ ] Création d'une fenêtre et de surfaces
 - [ ] Afficher des images

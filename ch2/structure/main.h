@@ -6,7 +6,7 @@ struct NomDeVotreStructure
     double nombreDecimal;
 };
 
-// Nous allons ajouter une instruction appeléetypedefqui sert à créer un alias de structure, 
+// Nous allons ajouter une instruction appelée typedef qui sert à créer un alias de structure, 
 // c'est-à-dire à dire qu'écrire telle chose équivaut à écrire telle autre chose.
 typedef struct Coordonnees Coordonnees; 
 struct Coordonnees
