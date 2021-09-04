@@ -19,7 +19,7 @@ Suivi :
 - [x] La saisie de texte sécurisée ✅
 - [ ] Apprenez à expliquer les pointeurs
 - [x] Création d'une fenêtre et de surfaces ✅
-- [ ] Afficher des images
+- [x] Afficher des images ✅
 - [ ] La gestion des événements
 - [ ] TP : Mario Sokoban
 - [ ] Maîtrisez le temps !
