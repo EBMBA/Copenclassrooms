@@ -20,7 +20,7 @@ Suivi :
 - [ ] Apprenez à expliquer les pointeurs
 - [x] Création d'une fenêtre et de surfaces ✅
 - [x] Afficher des images ✅
-- [ ] La gestion des événements
+- [x] La gestion des événements✅
 - [ ] TP : Mario Sokoban
 - [ ] Maîtrisez le temps !
 - [ ] Écrire du texte avec SDL_ttf
